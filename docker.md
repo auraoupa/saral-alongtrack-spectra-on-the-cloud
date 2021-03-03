@@ -12,21 +12,22 @@
 
  - install docker
  - open docker
- - git clone https://github.com/pangeo-data/pangeo-docker-images.git
- - cd pangeo-docker-images
- - install conda-lock : conda env create -f environment-condalock.yml
- - make pangeo-notebook
- - docker run -it --rm -p 8888:8888 pangeo/base-notebook:latest jupyter lab --ip 0.0.0.0
+ - `git clone https://github.com/pangeo-data/pangeo-docker-images.git`
+ - `cd pangeo-docker-images
+ - install conda-lock : `conda env create -f environment-condalock.yml`
+ - `make pangeo-notebook`
+ - `docker run -it --rm -p 8888:8888 pangeo/base-notebook:latest jupyter lab --ip 0.0.0.0`
 
 ## Test fortran docker 
 
-  - git clone https://github.com/UI-Research/HelloWorld_Fortran.git
-  - cd HelloWorld_Fortran/
-  - docker build -t helloworld .
-  - docker run helloworld
+  - `git clone https://github.com/UI-Research/HelloWorld_Fortran.git`
+  - `cd HelloWorld_Fortran/`
+  - `docker build -t helloworld .`
+  - `docker run helloworld`
 
 ## Mix of the 2 !!
 
 or better : finding in pangeo-notebook docker image where they defined the terminal bash and add gfortran and sosie in it (like they did for nco) ...
-
- - in https://github.com/pangeo-data/pangeo-docker-images/blob/master/base-image/Dockerfile#L34 add apt-get install gfortran
+ - dupliquer le repo pangeo-docker-images et l'appeler meom-sosie ?
+ - in https://github.com/pangeo-data/pangeo-docker-images/blob/master/base-image/Dockerfile#L34 add : `apt-get install gfortran`
+ - ajouter les sources de sosie dans le repo avec le Makefile qui utilise gfortran
