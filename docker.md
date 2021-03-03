@@ -31,3 +31,5 @@ or better : finding in pangeo-notebook docker image where they defined the termi
  - dupliquer le repo pangeo-docker-images et l'appeler meom-sosie ?
  - in https://github.com/pangeo-data/pangeo-docker-images/blob/master/base-image/Dockerfile#L34 add : `apt-get install gfortran`
  - ajouter les sources de sosie dans le repo avec le Makefile qui utilise gfortran
+ - `git checkout -b pangeo-notebook-gfortran`
+ - 
