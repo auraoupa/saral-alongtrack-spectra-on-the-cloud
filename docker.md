@@ -25,4 +25,6 @@
   - docker build -t helloworld .
   - docker run helloworld
 
-## Le mix des 2 !!
+## Mix of the 2 !!
+
+or finding in pangeo-notebook docker image where they defined the terminal bash and add gfortran and sosie in it (like they did for nco) ...
