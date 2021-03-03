@@ -27,4 +27,6 @@
 
 ## Mix of the 2 !!
 
-or finding in pangeo-notebook docker image where they defined the terminal bash and add gfortran and sosie in it (like they did for nco) ...
+or better : finding in pangeo-notebook docker image where they defined the terminal bash and add gfortran and sosie in it (like they did for nco) ...
+
+ - in https://github.com/pangeo-data/pangeo-docker-images/blob/master/base-image/Dockerfile#L34 add apt-get install gfortran
